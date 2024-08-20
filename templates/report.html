@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scan Report</title>
+</head>
+<body>
+    <h1>Scan Report</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>IP Address</th>
+                <th>Port</th>
+                <th>State</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for ip, ports in results.items() %}
+                {% if ip == 'error' %}
+                    <tr>
+                        <td colspan="3">Error: {{ ports }}</td>
+                    </tr>
+                {% else %}
+                    {% for port, details in ports.items() %}
+                        <tr>
+                            <td>{{ ip }}</td>
+                            <td>{{ port }}</td>
+                            <td>{{ details['state'] }}</td>
+                        </tr>
+                    {% endfor %}
+                {% endif %}
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
