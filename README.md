@@ -1,93 +1,90 @@
-# IoT Security Assessment Tool
+# 🛡️ Real-Time Ransomware Detection System
 
-This tool is designed to assess the security of IoT devices on a network by scanning for common vulnerabilities. It provides a basic report and recommendations for improving security.
+Welcome to the **Real-Time Ransomware Detection System**! This project is designed to provide a comprehensive solution for detecting ransomware attacks in real-time. By monitoring system activities and analyzing potential threats, the system aims to identify and respond to ransomware behaviors promptly, helping to safeguard valuable data and maintain system integrity.
 
-## Project Structure
+## ✨ Features
 
-```plaintext
-LoT-Security-Assessment-Tool/
-├── app/
-│   ├── __init__.py
-│   ├── main.py
-│   ├── scanner.py
-│   ├── utils.py
-│   ├── config.py
-│   └── models.py
-├── reports/
-│   └── example_report.md
-├── tests/
-│   ├── __init__.py
-│   ├── test_scanner.py
-│   └── test_utils.py
-├── requirements.txt
-├── README.md
-└── setup.py
-Installation
+- 🚨 **Real-Time Detection**: Monitors system activities to detect ransomware attacks as they happen.
+- 🔍 **Behavior Analysis**: Analyzes file and process behaviors to identify suspicious activities.
+- 🛡️ **Alert System**: Sends notifications when ransomware activities are detected.
+- 📊 **Dashboard**: Provides a user-friendly interface for monitoring system status and threat alerts.
+- 🛠️ **Customizable Rules**: Allows users to define and adjust detection rules based on their specific needs.
 
-    Clone the Repository:
+## 🛠️ Technology Stack
 
-    bash
+**Backend**:
+- 🐍 **Python**
+- 🛠️ **Flask** (for handling API requests)
+- 📊 **Pandas** (for data analysis)
+- 📈 **Scikit-learn** (for machine learning algorithms)
 
-git clone  https://github.com/Apatoma/LoT-Security-Assessment-Tool.git
-cd LoT-Security-Assessment-Tool
+**Frontend**:
+- ⚛️ **React.js**
+- 🎨 **CSS** (for styling)
 
-Create a Virtual Environment (Optional but Recommended):
+**Database**:
+- 🗄️ **SQLite**
 
-bash
+## 🚀 Getting Started
 
-python3 -m venv venv
-source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+Follow these steps to set up the project locally.
 
-Install Dependencies:
+### Prerequisites
 
-bash
+- **Python 3.8+**
+- **Node.js 14+**
+- **npm** (or yarn)
 
-pip install -r requirements.txt
+### Installation
 
-Run the Application:
+1. **Clone the repository**:
+    ```bash
+    git clone https://github.com/Apatoma/Real-Time-Ransomware-Detection-System.git
+    cd Real-Time-Ransomware-Detection-System
+    ```
 
-bash
+2. **Set up the backend**:
+    ```bash
+    cd backend
+    pip install -r requirements.txt
+    python run.py
+    ```
+    The backend server will start on [http://localhost:5000](http://localhost:5000).
 
-    python -m flask run
+3. **Set up the frontend**:
+    ```bash
+    cd frontend
+    npm install
+    npm start
+    ```
+    The frontend will be accessible at [http://localhost:3000](http://localhost:3000).
 
-    The application will be accessible at http://127.0.0.1:5000/.
+4. **Access the application**:
+    - The backend API will be running on [http://localhost:5000](http://localhost:5000).
+    - The frontend application will be available at [http://localhost:3000](http://localhost:3000).
 
-Usage
+## 📝 Usage
 
-    Open the application in your web browser.
-    Enter the network IP range you want to scan.
-    The tool will scan the network and provide a report with detected devices and their open ports.
+- **Monitor System Activities**: Use the dashboard to observe real-time system activity and detect potential ransomware threats.
+- **Review Alerts**: Check for alerts and notifications when suspicious activities are detected.
+- **Customize Detection Rules**: Adjust detection parameters and rules to tailor the system to your specific environment and threat landscape.
+- **Analyze Behavior**: View detailed analyses of detected behaviors to understand the nature and potential impact of threats.
 
-Running Tests
+## 🛤️ Future Enhancements
 
-To run the unit tests, use:
+- 🤖 **Advanced Detection Algorithms**: Integrate more sophisticated machine learning models for improved detection accuracy.
+- 📈 **Enhanced Analytics**: Develop more comprehensive analytics and reporting features.
+- 🌐 **Cloud Integration**: Extend the system to support cloud-based monitoring and detection.
+- 🔒 **Incident Response Integration**: Add features for automated incident response and remediation.
 
-bash
+## 🧑‍💻 Contributing
 
-python -m unittest discover tests
+Contributions are welcome! Please fork the repository, make your changes, and submit a pull request.
 
-This command will discover and execute all tests located in the tests/ directory.
-Expanding the Project
+## 📄 License
 
-This tool serves as a starting point. Consider adding features such as:
-
-    More advanced vulnerability detection techniques.
-    Integration with a database to store historical scan results.
-    Enhanced reporting with more detailed analysis and recommendations.
-
-Contributing
-
-Contributions are welcome! If you have suggestions or improvements, please submit a pull request or open an issue.
-License
-
-This project is licensed under the MIT License. See the LICENSE file for more details.
-Disclaimer
-
-This tool is intended for educational and ethical purposes only. Use it responsibly and only on networks and devices where you have explicit permission to perform security assessments.
-
-yaml
-
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
 
 ---
 
-Este proyecto proporciona una base sólida para evaluar la seguridad de dispositivos IoT en una red. Puedes ampliarlo con características adicionales y mejorarlo según tus necesidades. Si necesitas más detalles o ayuda con la implementación, no dudes en preguntar.
+Made with ❤️ by [Alejandro](https://github.com/Apatoma)
